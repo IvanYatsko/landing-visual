@@ -1,0 +1,41 @@
+.slider {
+  &__image {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-arrow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 3px;
+    padding: 12px 20px 12px 20px;
+
+    &__left {
+      top: 50%;
+      left: 10%;
+    }
+
+    &__right {
+      top: 50%;
+      right: 10%;
+      rotate: 180deg;
+    }
+
+    &__disabled {
+      visibility: hidden;
+    }
+  }
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider {
+    &__image {
+      height: 734px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.localization {
+  width: 79px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #464a48;
+
+  & span {
+    display: flex;
+    align-items: center;
+  }
+
+  &__active {
+    color: #ababab;
+  }
+}
