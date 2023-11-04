@@ -1,0 +1,50 @@
+.navigation-list {
+  display: flex;
+  gap: 20px;
+
+  :first-child > ::after {
+    left: calc(50% - 25%);
+    width: 50%;
+    transition: 0.5s;
+  }
+
+  &__arrow {
+    margin-left: 6px;
+    width: 15px;
+  }
+
+  &__link {
+    color: #464a48;
+    position: relative;
+    font-size: 22px;
+
+    &:hover {
+      &::after {
+        left: calc(50% - 25%);
+        width: 50%;
+        transition: 0.5s;
+      }
+    }
+
+    &:active {
+      color: #cdae6c;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background-color: #cdae6c;
+      transition: 0.5s;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navigation-list {
+    gap: 60px;
+  }
+}

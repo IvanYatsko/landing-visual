@@ -1,0 +1,17 @@
+.social-list {
+  display: flex;
+  height: 24px;
+  gap: 9px;
+  margin-left: 48px;
+
+  &__item,
+  &__link {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .social-list {
+    gap: 17px;
+  }
+}
